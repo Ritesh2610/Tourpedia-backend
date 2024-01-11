@@ -24,7 +24,7 @@ app.use("/users",userRouter)
 app.use("/tour",tourRouter)
 app.use("/",(req,res)=>res.json("Welcome to tour app"))
 
-mongoose.connect("mongodb://127.0.0.1:27017/tour")
+mongoose.connect("mongodb+srv://riteshpandey7356:emHwFjE7b9SPwzTX@cluster0.a2ke5tx.mongodb.net/tour_app?retryWrites=true&w=majority/tour")
 .then(()=>{
     app.listen(port,()=>console.log(`Server Running on ${port}`))
 })
